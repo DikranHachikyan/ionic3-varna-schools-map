@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding side="right">
+  <ion-list>
+  	
+  		<ion-item text-wrap *ngFor="let school of schools">
+  			<ion-label>
+  				{{school.schoolName}}
+  			</ion-label>
+  			<button ion-button clear item-end
+  					(click)="viewOnGoogleMap(school)">
+  					<ion-icon name="eye"></ion-icon>
+  			</button>
+  		</ion-item>
+
+  </ion-list>
+</ion-content>

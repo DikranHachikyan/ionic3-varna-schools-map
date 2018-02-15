@@ -1,0 +1,32 @@
+<!--
+  Generated template for the SchoolLocationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>school-location</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card *ngIf="selectedSchool">
+  	<ion-card-header text-wrap>
+  	  {{selectedSchool.schoolName}}
+  	</ion-card-header>
+
+	<ion-card-content>
+	  	<ion-label text-wrap>
+	  	 {{selectedSchool.city}} {{selectedSchool.address}}
+	  	</ion-label>
+	</ion-card-content>	
+  </ion-card>	
+  
+  <div id="map_canvas">
+  	
+  </div>
+</ion-content>
